@@ -21,7 +21,7 @@ sudo wget https://zoom.us/client/latest/zoom_amd64.deb
 echo "Zoom Baixado"
 
 
-git clone https://github.com/jo316dev/zoiper.git  
+#git clone https://github.com/jo316dev/zoiper.git  
 sudo chmod +x zoiper/Zoiper_for_AATeleccom_Linux_64bit_v3.20.run
 sudo zoiper/Zoiper_for_AATeleccom_Linux_64bit_v3.20.run 
 echo "Zoiper instalado...continuando"
