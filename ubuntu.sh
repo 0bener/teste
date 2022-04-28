@@ -22,8 +22,12 @@ echo "Zoom Baixado"
 
 
 #git clone https://github.com/jo316dev/zoiper.git  
-sudo chmod +x zoiper/Zoiper_for_AATeleccom_Linux_64bit_v3.20.run
-sudo zoiper/Zoiper_for_AATeleccom_Linux_64bit_v3.20.run 
+#sudo chmod +x zoiper/Zoiper_for_AATeleccom_Linux_64bit_v3.20.run
+#sudo zoiper/Zoiper_for_AATeleccom_Linux_64bit_v3.20.run 
+sudo chmod +x ./Zoiper_for_AATeleccom_Linux_64bit_v3.20.run
+sudo ./Zoiper_for_AATeleccom_Linux_64bit_v3.20.run 
+
+
 echo "Zoiper instalado...continuando"
 echo "================================"
 echo "Instalando Wine"
