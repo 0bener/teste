@@ -37,7 +37,7 @@ echo "Zoiper instalado...continuando"
 #instala Free Office
 echo "Instalando FreeOffice"
 sudo apt update
-sudo apt install softmaker-freeoffice-2021
+sudo apt install softmaker-freeoffice-2021 -y
 echo "FreeOffice instalado...continuando"
 
 
