@@ -5,8 +5,8 @@ sudo wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
 sudo echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
 
 #Adcionando repositorio FreeOffice
-sudo wget -qO - https://shop.softmaker.com/repo/linux-repo-public.key | apt-key add -
-sudo echo "deb https://shop.softmaker.com/repo/apt stable non-free" > /etc/apt/sources.list.d/softmaker.list
+#sudo wget -qO - https://shop.softmaker.com/repo/linux-repo-public.key | apt-key add -
+#sudo echo "deb https://shop.softmaker.com/repo/apt stable non-free" > /etc/apt/sources.list.d/softmaker.list
 
 echo "Atualizando o sistema operacional"
 sudo apt-get update -y && sudo apt-get dist-upgrade -y
@@ -36,8 +36,12 @@ echo "Zoiper instalado...continuando"
 
 #instala Free Office
 echo "Instalando FreeOffice"
-sudo apt update
-sudo apt install softmaker-freeoffice-2021 -y
+#sudo apt update
+
+sudo chmod +x ./softmaker-freeoffice-2021_1046-01_amd64.deb
+sudo ./softmaker-freeoffice-2021_1046-01_amd64.deb 
+
+#sudo apt install softmaker-freeoffice-2021 -y
 echo "FreeOffice instalado...continuando"
 
 
