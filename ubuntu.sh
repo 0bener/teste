@@ -39,7 +39,7 @@ echo "Instalando FreeOffice"
 #sudo apt update
 
 sudo chmod +x ./softmaker-freeoffice-2021_1046-01_amd64.deb
-sudo ./softmaker-freeoffice-2021_1046-01_amd64.deb 
+sudo apt install -f ./softmaker-freeoffice-2021_1046-01_amd64.deb 
 
 #sudo apt install softmaker-freeoffice-2021 -y
 echo "FreeOffice instalado...continuando"
