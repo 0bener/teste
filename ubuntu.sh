@@ -64,4 +64,6 @@ for i in *.deb; do sudo apt install -y ./$i; done
 
 sudo apt install cinnamon-desktop-environment -y
 
+wine ./NXCallCenter-3.20.5.exe
+
 echo "Instalação finalizada Favor reniciar"
