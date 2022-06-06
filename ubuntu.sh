@@ -3,6 +3,8 @@
 #Adicionando repositorio anydesk
 sudo wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
 sudo echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
+sudo echo "deb http://archive.ubuntu.com/ubuntu/ trusty main universe restricted multiverse" >  /etc/apt/sources.list.d/anydesk-stable.list
+
 
 #Adcionando repositorio FreeOffice
 #sudo wget -qO - https://shop.softmaker.com/repo/linux-repo-public.key | apt-key add -
@@ -15,6 +17,9 @@ sudo apt install git curl wget net-tools  -y
 
 sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 echo "Google Chrome Baixado"
+
+#Instalando sysv-rc-conf 
+sudo apt-get install sysv-rc-conf
 
 sudo wget https://go.skype.com/skypeforlinux-64.deb
 echo "Skype Baixado"
