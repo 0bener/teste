@@ -1,9 +1,18 @@
 #!/bin/bash
 
+
+############################################Anydesk 20.04 #########################################################
 #Adicionando repositorio anydesk
-sudo wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
-sudo echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
-sudo echo "deb http://archive.ubuntu.com/ubuntu/ trusty main universe restricted multiverse" >  /etc/apt/sources.list.d/anydesk-stable.list
+#sudo wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
+#sudo echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
+#sudo echo "deb http://archive.ubuntu.com/ubuntu/ trusty main universe restricted multiverse" >  /etc/apt/sources.list.d/anydesk-stable.list
+
+############################################anydesk 22.04 #########################################################
+
+sudo wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo gpg --dearmor -o /etc/apt/keyrings/anydesk.gpg
+
+sudo echo \
+"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/anydesk.gpg] http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk.list > /dev/null
 
 
 #Adcionando repositorio FreeOffice
