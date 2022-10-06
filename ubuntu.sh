@@ -53,7 +53,7 @@ echo "Zoiper instalado...continuando"
 echo "Instalando FreeOffice"
 sudo cat onlyoffice.deba* > onlyoffice.deb
 sudo chmod +x ./onlyoffice.deb
-sudo apt install -f ./onlyoffice.deb 
+sudo apt install -f ./onlyoffice.deb -y
 
 #sudo apt install softmaker-freeoffice-2021 -y
 echo "onlyofficeOffice instalado...continuando"
