@@ -48,15 +48,15 @@ sudo ./Zoiper_for_AATeleccom_Linux_64bit_v3.20.run
 echo "Zoiper instalado...continuando"
 
 
-#instala Free Office
+#instala onlyoffice Office
 
 echo "Instalando FreeOffice"
-sudo cat softmaker.deba* > softmaker.deb
-sudo chmod +x ./softmaker.deb
-sudo apt install -f ./softmaker.deb 
+sudo cat onlyoffice.deba* > onlyoffice.deb
+sudo chmod +x ./onlyoffice.deb
+sudo apt install -f ./onlyoffice.deb 
 
 #sudo apt install softmaker-freeoffice-2021 -y
-echo "FreeOffice instalado...continuando"
+echo "onlyofficeOffice instalado...continuando"
 
 
 echo "================================"
