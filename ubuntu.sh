@@ -6,10 +6,9 @@ if [ -n "$(cat /etc/issue | grep -i "20.04")" ]; then
    	sudo echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
   	sudo echo "deb http://archive.ubuntu.com/ubuntu/ trusty main universe restricted multiverse" >  /etc/apt/sources.list.d/anydesk-stable.list
     else
-		   sudo wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo gpg --dearmor -o /etc/apt/keyrings/anydesk.gpg
-		   sudo echo \
+    	sudo wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo gpg --dearmor -o /etc/apt/keyrings/anydesk.gpg
+	sudo echo \
 		   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/anydesk.gpg] http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk.list > /dev/null
-		
 fi
 
 
