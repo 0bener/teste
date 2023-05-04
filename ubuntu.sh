@@ -15,10 +15,6 @@ sudo echo \
 "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/anydesk.gpg] http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk.list > /dev/null
 
 
-#Adcionando repositorio FreeOffice
-#sudo wget -qO - https://shop.softmaker.com/repo/linux-repo-public.key | apt-key add -
-#sudo echo "deb https://shop.softmaker.com/repo/apt stable non-free" > /etc/apt/sources.list.d/softmaker.list
-
 echo "Atualizando o sistema operacional"
 sudo apt-get update -y && sudo apt-get dist-upgrade -y
 
@@ -39,24 +35,13 @@ echo "Skype Baixado"
 sudo wget https://zoom.us/client/latest/zoom_amd64.deb
 echo "Zoom Baixado"
 
-echo "Instalando Zoiper"
-#git clone https://github.com/jo316dev/zoiper.git  
-#sudo chmod +x zoiper/Zoiper_for_AATeleccom_Linux_64bit_v3.20.run
-#sudo zoiper/Zoiper_for_AATeleccom_Linux_64bit_v3.20.run 
-sudo chmod +x ./Zoiper_for_AATeleccom_Linux_64bit_v3.20.run
-sudo ./Zoiper_for_AATeleccom_Linux_64bit_v3.20.run 
-echo "Zoiper instalado...continuando"
 
+#instala Slack
 
-#instala onlyoffice Office
-
-echo "Instalando FreeOffice"
-sudo cat onlyoffice.deba* > onlyoffice.deb
-sudo chmod +x ./onlyoffice.deb
-sudo apt install -f ./onlyoffice.deb -y
-
-#sudo apt install softmaker-freeoffice-2021 -y
-echo "onlyofficeOffice instalado...continuando"
+echo "Instalando Slack"
+sudo cat slack.deba* > slack.deb
+sudo chmod +x ./slack.deb
+sudo apt install -f ./slack.deb -y
 
 
 echo "================================"
