@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 #Adicionando repositorio anydesk
 if [ -n "$(cat /etc/issue | grep -i "20.04")" ]; then
    	sudo wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
