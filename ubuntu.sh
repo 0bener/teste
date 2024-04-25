@@ -13,6 +13,8 @@ if [ -n "$(cat /etc/issue | grep -i "20.04")" ]; then
 fi
 
 
+
+
 echo "Atualizando o sistema operacional"
 sudo apt-get update -y && sudo apt-get dist-upgrade -y
 
